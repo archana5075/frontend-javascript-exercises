@@ -14,14 +14,18 @@ module.exports.favoriteNumber = function(favNum, guessNum){
 module.exports.checkLock = function(first, second, third, fourth){
 
 	if (
-		 ((first == 3) || (first == 5) || (first == 7))  
-	  && (second == 2)
-      && ( (third >= 5 ) && (third <= 100) )
-      && ( ((fourth < 9) || (fourth > 20)) && ((fourth != 9) || (fourth != 20)) ) 
-       ) 
-        return "correct";
-    else 
-       return "incorrect";     
+		      ((first == 3) || (first == 5) || (first == 7)) 
+       && (second == 2)
+       && ( (third >= 5 ) && (third <= 100) )
+       && ( (fourth < 9) || (fourth > 20)   )   
+      ) 
+  {
+    return "correct";
+  } 
+  else
+  {   
+    return "incorrect";     
+  }
 
 };
 
