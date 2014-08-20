@@ -7,7 +7,7 @@ module.exports.newArray = function(first, second, third, fourth){
     array[2] = third;
     array[3] = fourth;
 
-    return arr;
+    return array;
 
 };
 
