@@ -32,5 +32,6 @@ module.exports.canIGet = function(item, money){
                    'Mac Pro'     : 2499,
                    'Apple Sticker' : 1 
                  };
+                 
       return (money >= price[item]); 
 };
