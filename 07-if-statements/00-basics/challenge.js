@@ -32,22 +32,13 @@ module.exports.checkLock = function(first, second, third, fourth){
 module.exports.canIGet = function(item, money){
 
     if (
-    	   ((item == 'MacBook Air') && (money >= 999 ))
-    	|| ((item == 'MacBook Pro') && (money >= 1299 ))
-    	|| ((item == 'Mac Pro') && (money >=  2499))
+    	   ((item == 'MacBook Air')   && (money >= 999 ))
+    	|| ((item == 'MacBook Pro')   && (money >= 1299 ))
+    	|| ((item == 'Mac Pro')       && (money >=  2499))
     	|| ((item == 'Apple Sticker') && (money >= 1 )) 
 
     	)
     	return true;
-    else if
-      (
-         ((item == 'MacBook Air') && (money < 999 ))
-      || ((item == 'MacBook Pro') && (money < 1299 ))
-      || ((item == 'Mac Pro') && (money <  2499))
-      || ((item == 'Apple Sticker') && (money < 1 )) 
-
-      )
-     return false;
-   else 
+    else 
       return false;
 };
