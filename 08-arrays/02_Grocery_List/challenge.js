@@ -1,5 +1,5 @@
 module.exports.addItem = function(item, list){
-while(list.indexOf(item) ==  -1)
+if(list.indexOf(item) ==  -1)
 {
   list.push(item);
 }

@@ -1,7 +1,7 @@
 module.exports.createCourse = function(courseTitle, courseDuration, courseStudents){
  var course = 
  {   
-      title : courseTitle,
+      title    : courseTitle,
       duration : courseDuration,
       students : courseStudents
  };
@@ -18,7 +18,6 @@ module.exports.addProperty = function(object, newProp, newValue){
 };
 
 module.exports.formLetter = function(email){
-
 	return "Hello " + email.recipient + ","
 	                + "\n\n" + email.msg 
 	                + "\n\nSincerely,"
@@ -27,7 +26,6 @@ module.exports.formLetter = function(email){
 };
 
 module.exports.canIGet = function(item, money){
-
 	var price = { 
                    'MacBook Air' :  999,
                    'MacBook Pro' : 1299,

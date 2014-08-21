@@ -14,8 +14,15 @@ module.exports.outsideRanges = function(number) {
 
 	return  !(10 <= number && number <= 20) 
 	     && !(42 < number && number <= 75) 
-	     && !(1 < number && number < 6) ;
-
+	     && !(1 < number && number < 6) ; 
+/*
+	if  ((number >= 10 && number <= 20) 
+	  || (number > 42 && number <= 75) 
+	  || (number > 1 && number < 6))
+	     return false;
+	else
+		return true;
+*/
 };
 
 module.exports.nameAndPrice = function(name, price) {
